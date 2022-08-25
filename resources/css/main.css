@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: black;
+     font-family: "Roboto Mono", sans-serif;
+    background: #C06C84;
+
+}
+header{
+    width: 100%;
+    height: 70px;
+    background: #355C7D;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    background: #355C7D;
+
+}
+.wrapper{
+    max-width: 1000px;
+    height: fit-content;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+.wrapper-menu{
+    max-width: 1000px;
+    height: fit-content;
+    min-height: 100%;
+    margin: 0 auto;
+}
+.btn{
+    background: #F8B195;
+    padding: 15px 5px 15px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+.btn:hover{
+    background: #C06C84;
+    transition: all 0.3s;
+}
+.post-card{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px;
+    border: 2px solid #F8B195;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+nav>form{
+    display: flex;
+    width: 300px;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-around;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form>button{
+    background: #F8B195;
+    padding: 15px 5px 15px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    border: none;
+}
+form>input{
+    padding: 15px 5px 15px 5px;
+    font-size: 12pt;
+    border-radius: 5px;
+}
+.comments{
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    border: 2px solid #F8B195;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.comment{
+    border: 1px none black;
+    border-bottom-style: solid;
+    padding: 15px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.logo{
+    color: #F8B195;
+}
+.founded{
+    background: #355C7D;
+    font-weight: bold;
+}
+.alert{
+    background: lightgreen;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

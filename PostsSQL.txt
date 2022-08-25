@@ -1,0 +1,18 @@
+CREATE TABLE Posts
+(
+    id INT PRIMARY KEY,
+    user_id VARCHAR(255),
+    title VARCHAR(255),
+    body text
+);
+CREATE TABLE Comments
+(
+    id INT PRIMARY KEY,
+    post_id INT,
+    CONSTRAINT fk_posts
+    	FOREIGN KEY(post_id)
+    	REFERENCES Posts(id),
+    name VARCHAR(255),
+    email VARCHAR(255),
+    body text
+)
